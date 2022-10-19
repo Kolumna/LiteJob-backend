@@ -1,0 +1,14 @@
+GET http://localhost:5000/users/
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "first_name": "Michal",
+    "second_name": "Janiec",
+    "email": "ceo@janiectheme.site",
+    "login": "kolumna",
+    "password": "tajne"
+}
