@@ -1,35 +1,37 @@
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
-    first_name: {
+    title: {
         type: String,
         required: true
     },
-    second_name: {
+    content: {
         type: String,
         required: true
     },
-    company: {
+    price: {
         type: String,
         required: true
     },
-    email: {
+    location: {
         type: String,
-        required: false
+        required: true,
+        default: 'Toruń'
     },
-    login: {
+    category: {
         type: String,
-        required: false
+        required: true,
+        default: 'praca'
     },
-    password: {
+    owner_id: {
         type: String,
-        required: false
+        required: true
     },
-    account_date: {
+    oferta_date: {
         type: Date,
         required: true,
         default: Date.now
     }
 })
 
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('Oferta', userSchema)

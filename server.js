@@ -12,6 +12,9 @@ app.use(express.json());
 const usersDB = require("./routes/users");
 app.use("/users", usersDB);
 
+const ofertyDB = require("./routes/oferty");
+app.use("/oferty", ofertyDB);
+
 app.get("", (req, res) => {
   res.send(
     '<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><h1>LiteJob serwer działaaa :)</h1></div>'

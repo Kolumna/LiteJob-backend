@@ -2,13 +2,12 @@ GET http://localhost:5000/users/
 
 ###
 
-POST http://localhost:5000/users
+POST http://localhost:5000/oferty/
 Content-Type: application/json
 
 {
-    "first_name": "Michal",
-    "second_name": "Janiec",
-    "email": "ceo@janiectheme.site",
-    "login": "kolumna",
-    "password": "tajne"
+    "title": "Rowy",
+    "content": "Zapraszam do kopania rowów",
+    "price": "100zł",
+    "owner_id": "63510a6bf1c8576f95789f9f"
 }
