@@ -6,8 +6,8 @@ POST http://localhost:5000/oferty/
 Content-Type: application/json
 
 {
-    "title": "Rowy",
-    "content": "Zapraszam do kopania rowów",
-    "price": "100zł",
+    "title": "Kopanie w dupsko Natanka",
+    "content": "oj taaak",
+    "price": "1zł",
     "owner_id": "63510a6bf1c8576f95789f9f"
 }

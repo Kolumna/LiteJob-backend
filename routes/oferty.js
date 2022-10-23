@@ -38,22 +38,22 @@ router.post("/", async (req, res) => {
 //aktualizacja
 router.patch("/:id", getOferta, async (req, res) => {
   if(req.body.title != null) {
-    res.user.title = req.body.title
+    res.oferta.title = req.body.title
   }
   if(req.body.content != null) {
-    res.user.content = req.body.content
+    res.oferta.content = req.body.content
   }
   if(req.body.price != null) {
-    res.user.price = req.body.price
+    res.oferta.price = req.body.price
   }
   if(req.body.location != null) {
-    res.user.location = req.body.location
+    res.oferta.location = req.body.location
   }
   if(req.body.category != null) {
-    res.user.category = req.body.category
+    res.oferta.category = req.body.category
   }
   if(req.body.owner_id != null) {
-    res.user.owner_id = req.body.owner_id
+    res.oferta.owner_id = req.body.owner_id
   }
   try {
     const updatedOferta = await res.oferta.save()

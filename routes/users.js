@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
     second_name: req.body.second_name,
     company: req.body.company,
     email: req.body.email,
-    login: req.body.login,
+    user_id: req.body.user_id,
     password: req.body.password,
   });
   try {
@@ -49,8 +49,8 @@ router.patch("/:id", getUser, async (req, res) => {
   if(req.body.company != null) {
     res.user.company = req.body.company
   }
-  if(req.body.login != null) {
-    res.user.login = req.body.login
+  if(req.body.user_id != null) {
+    res.user.user_id = req.body.user_id
   }
   if(req.body.password != null) {
     res.user.password = req.body.password
